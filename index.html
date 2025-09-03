@@ -206,10 +206,14 @@
         <!-- Contact Form Card -->
         <div class="contact-card form-card">
           <h3>Send a Message</h3>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mgvlngpy"
+            method="POST"
+          >
+            <input type="text" placeholder="Your Name" required name="name" />
+            <input type="email" placeholder="Your Email" required name="email" />
+            <textarea placeholder="Your Message" rows="5" required name="message"></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -220,4 +224,5 @@
       <p>&copy; 2025 Kunal Kumar. All rights reserved.</p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
